@@ -1359,3 +1359,1011 @@ a.contact-item:hover i {
 .project-info p {
     color: #aaa !important;
 }
+
+/* =========================================================
+   FINAL RESPONSIVE SYSTEM
+   Works across desktop, tablet, mobile and small phones
+   ========================================================= */
+
+/* ---------- GLOBAL RESPONSIVE SAFETY ---------- */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    .hero {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .section {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .project-visual {
+        height: 420px;
+    }
+
+    .mock-window {
+        width: 70%;
+    }
+
+    .chat-ui {
+        width: 75%;
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .header {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .hero {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        gap: 4vw;
+    }
+
+    .section {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 76px);
+    }
+
+    .profile-card {
+        width: min(330px, 80vw);
+        height: 430px;
+    }
+
+    .portrait-placeholder {
+        height: 350px;
+    }
+
+    /* Work section */
+    .projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 24px !important;
+    }
+
+    .project-visual {
+        height: 360px !important;
+        min-height: 360px !important;
+    }
+
+    .mock-window {
+        width: 72%;
+        height: 55%;
+    }
+
+    .chat-ui {
+        width: 76%;
+    }
+
+    .project-info {
+        padding: 18px 2px;
+    }
+
+    .project-info h3 {
+        font-size: 18px;
+    }
+
+    .about-grid,
+    .skills-layout {
+        gap: 5vw;
+    }
+
+    .footer-main {
+        gap: 50px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .header {
+        height: 72px;
+        padding: 0 6vw;
+    }
+
+    .logo {
+        min-width: 0;
+        max-width: 75%;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .logo span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .nav.open {
+        top: 72px;
+        padding: 25px 7vw;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 80px 7vw 70px;
+        gap: 45px;
+    }
+
+    .hero-copy {
+        max-width: 850px;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 9vw, 72px);
+        letter-spacing: -3px;
+    }
+
+    .hero-art {
+        min-height: 500px;
+        width: 100%;
+    }
+
+    .profile-card {
+        width: min(350px, 78vw);
+        height: 450px;
+    }
+
+    .portrait-placeholder {
+        height: 370px;
+    }
+
+    /* About */
+    .about-grid,
+    .skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        gap: 45px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    /* Work */
+    .projects {
+        grid-template-columns: 1fr !important;
+        gap: 35px !important;
+    }
+
+    .project {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-visual {
+        width: 100%;
+        height: 390px !important;
+        min-height: 390px !important;
+    }
+
+    .mock-window {
+        width: min(72%, 500px);
+        height: 58%;
+    }
+
+    .chat-ui {
+        width: min(75%, 500px);
+    }
+
+    .phone {
+        width: 150px;
+        height: 285px;
+    }
+
+    .project-info {
+        padding: 18px 2px 10px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 12px;
+    }
+
+    /* Skills */
+    .skill-list > div {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .skill-list small {
+        display: none;
+    }
+
+    /* Experience */
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 110px 7vw;
+    }
+
+    .contact h2 {
+        font-size: clamp(45px, 10vw, 75px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        height: 68px;
+        padding: 0 5vw;
+    }
+
+    .logo {
+        font-size: 13px;
+        max-width: 80%;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+        border-width: 1px;
+    }
+
+    .logo span {
+        margin-left: 7px;
+        margin-right: 0;
+    }
+
+    .menu-btn {
+        padding: 8px;
+        flex-shrink: 0;
+    }
+
+    .nav.open {
+        top: 68px;
+        padding: 22px 6vw;
+    }
+
+    .nav.open a {
+        padding: 7px 0;
+        font-size: 15px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        padding: 65px 6vw 60px;
+        gap: 35px;
+    }
+
+    .eyebrow {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+        line-height: 1.6;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 60px);
+        line-height: .98;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 24px 0;
+    }
+
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* ---------- HERO ART ---------- */
+
+    .hero-art {
+        min-height: 410px;
+    }
+
+    .profile-card {
+        width: min(290px, 76vw);
+        height: 375px;
+        padding: 14px;
+    }
+
+    .card-top {
+        font-size: 8px;
+    }
+
+    .portrait-placeholder {
+        height: 305px;
+        margin-top: 12px;
+    }
+
+    .initials {
+        font-size: 75px;
+    }
+
+    .card-bottom {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .card-bottom strong {
+        font-size: 14px;
+    }
+
+    .card-bottom small {
+        font-size: 10px;
+    }
+
+    .code-mark {
+        right: 16px;
+        bottom: 22px;
+        font-size: 17px;
+    }
+
+    .orb-a {
+        width: 170px;
+        height: 170px;
+    }
+
+    .orb-b {
+        width: 70px;
+        height: 70px;
+    }
+
+    .floating-tag {
+        padding: 8px 10px;
+        font-size: 8px;
+    }
+
+    .tag-one {
+        left: 1%;
+        top: 20%;
+    }
+
+    .tag-two {
+        right: 1%;
+        bottom: 18%;
+    }
+
+
+    /* ---------- GENERAL SECTIONS ---------- */
+
+    .section {
+        padding: 75px 6vw;
+    }
+
+    .section-label {
+        font-size: 10px;
+    }
+
+    .about-grid {
+        margin-top: 40px;
+        gap: 35px;
+    }
+
+    .about h2,
+    .skills h2 {
+        font-size: clamp(38px, 11vw, 52px);
+        letter-spacing: -2px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .facts {
+        margin-top: 45px;
+    }
+
+
+    /* =====================================================
+       WORK / PROJECTS
+       ===================================================== */
+
+    .section-head {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .section-head p {
+        text-align: left;
+        margin-top: 12px;
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .projects {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        gap: 32px !important;
+    }
+
+    .project {
+        display: block !important;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow: visible;
+    }
+
+    .project-visual {
+        width: 100% !important;
+        height: 300px !important;
+        min-height: 300px !important;
+        max-height: none;
+    }
+
+    .project-visual > span {
+        top: 13px;
+        left: 13px;
+        font-size: 10px;
+    }
+
+    /* Marketplace project */
+    .mock-window {
+        width: 78%;
+        height: 58%;
+        padding: 11px;
+        transform: rotate(-4deg);
+    }
+
+    .window-bar {
+        margin-bottom: 14px;
+    }
+
+    .window-bar i {
+        width: 5px;
+        height: 5px;
+    }
+
+    .mock-window strong {
+        font-size: 18px;
+    }
+
+    .product-row {
+        gap: 5px;
+        margin: 15px 0;
+    }
+
+    .product-row b {
+        height: 40px;
+    }
+
+    .mock-window small {
+        font-size: 7px;
+    }
+
+
+    /* Queue project */
+    .phone {
+        width: 125px;
+        height: 235px;
+        border-width: 6px;
+        border-radius: 21px;
+        padding: 37px 12px 12px;
+        transform: rotate(5deg);
+    }
+
+    .queue-phone i {
+        height: 5px;
+        width: 38px;
+        margin: -23px auto 19px;
+    }
+
+    .queue-phone strong {
+        font-size: 13px;
+    }
+
+    .queue-phone em {
+        font-size: 6px;
+        margin-top: 17px;
+    }
+
+    .queue-phone b {
+        font-size: 38px;
+    }
+
+    .queue-phone small {
+        font-size: 7px;
+    }
+
+    .queue-line {
+        margin-top: 17px;
+    }
+
+
+    /* AI Chatbot project */
+    .chat-ui {
+        width: 82%;
+        padding: 18px;
+    }
+
+    .chat-ui strong {
+        font-size: 31px;
+        margin-bottom: 12px;
+    }
+
+    .chat-ui p {
+        font-size: 9px;
+        margin-bottom: 16px;
+    }
+
+    .chat-ui div {
+        height: 9px;
+        margin: 7px 0;
+    }
+
+    .chat-ui small {
+        font-size: 6px;
+        margin-top: 15px;
+    }
+
+
+    /* Project information */
+    .project-info {
+        width: 100%;
+        padding: 15px 2px 5px;
+        gap: 15px;
+    }
+
+    .project-info > div {
+        min-width: 0;
+    }
+
+    .project-info h3 {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .project-info p {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-top: 5px;
+    }
+
+    .arrow {
+        flex-shrink: 0;
+        font-size: 18px;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-layout {
+        margin-top: 40px;
+    }
+
+    .skills-intro {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .skill-list > div {
+        grid-template-columns: 35px 1fr;
+        padding: 15px 0;
+    }
+
+    .skill-list span {
+        font-size: 10px;
+    }
+
+    .skill-list strong {
+        font-size: 15px;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .timeline-item {
+        padding: 25px 0;
+    }
+
+    .timeline-item h3 {
+        font-size: 20px;
+    }
+
+    .timeline-item p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact {
+        padding: 90px 6vw;
+    }
+
+    .contact h2 {
+        font-size: clamp(40px, 12vw, 60px);
+        letter-spacing: -2px;
+    }
+
+    .contact-copy {
+        font-size: 14px;
+        margin: 24px 0;
+    }
+
+    .contact-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-button {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .site-footer {
+        margin-top: 60px;
+        padding: 55px 6% 20px;
+    }
+
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        padding-bottom: 45px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        font-size: clamp(2.5rem, 14vw, 3.5rem);
+    }
+
+    .footer-brand > p {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .footer-links,
+    .footer-contact {
+        width: 100%;
+    }
+
+    .contact-item {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 0.68rem;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .header {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .logo {
+        font-size: 11px;
+    }
+
+    .logo img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .hero {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .section {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 12vw, 50px);
+    }
+
+    .hero-art {
+        min-height: 360px;
+    }
+
+    .profile-card {
+        width: min(260px, 75vw);
+        height: 340px;
+    }
+
+    .portrait-placeholder {
+        height: 275px;
+    }
+
+    .initials {
+        font-size: 65px;
+    }
+
+    .tag-one {
+        left: -2%;
+    }
+
+    .tag-two {
+        right: -2%;
+    }
+
+
+    /* Work section */
+    .project-visual {
+        height: 270px !important;
+        min-height: 270px !important;
+    }
+
+    .mock-window {
+        width: 80%;
+        height: 56%;
+    }
+
+    .mock-window strong {
+        font-size: 16px;
+    }
+
+    .product-row b {
+        height: 34px;
+    }
+
+    .phone {
+        width: 112px;
+        height: 215px;
+        padding-top: 34px;
+    }
+
+    .queue-phone b {
+        font-size: 34px;
+    }
+
+    .chat-ui {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .chat-ui strong {
+        font-size: 27px;
+    }
+
+    .project-info h3 {
+        font-size: 16px;
+    }
+
+    .project-info p {
+        font-size: 10px;
+    }
+
+    .arrow {
+        font-size: 16px;
+    }
+
+    .footer-logo {
+        font-size: 2.5rem;
+    }
+
+    .socials {
+        gap: 7px;
+    }
+
+    .socials a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 350px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .hero-art {
+        min-height: 330px;
+    }
+
+    .profile-card {
+        width: 235px;
+        height: 310px;
+    }
+
+    .portrait-placeholder {
+        height: 250px;
+    }
+
+    .floating-tag {
+        font-size: 7px;
+        padding: 7px 8px;
+    }
+
+    .project-visual {
+        height: 245px !important;
+        min-height: 245px !important;
+    }
+
+    .mock-window {
+        width: 82%;
+    }
+
+    .chat-ui {
+        width: 88%;
+    }
+
+    .phone {
+        width: 105px;
+        height: 200px;
+    }
+
+    .project-info h3 {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   LANDSCAPE PHONES
+   ========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .hero-art {
+        min-height: 360px;
+    }
+
+    .profile-card {
+        height: 330px;
+    }
+
+    .portrait-placeholder {
+        height: 265px;
+    }
+
+    .project-visual {
+        height: 300px !important;
+        min-height: 300px !important;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Remove hover movement that can feel awkward on phones
+   ========================================================= */
+
+@media (hover: none) {
+
+    .project:hover .project-visual {
+        transform: none;
+        border-color: #292929;
+    }
+
+    .project:hover .default-project-card {
+        transform: rotate(-3deg);
+    }
+
+    .socials a:hover {
+        transform: none;
+    }
+
+    .hire-btn:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
